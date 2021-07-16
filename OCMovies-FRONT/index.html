@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="images/logo.png" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JustStreamIt</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="left-div">
+          <a href="#">
+            <img src="./images/logo.png" alt="herobanner image" />
+          </a>
+        </div>
+        <div class="right-div">
+          <a href="#" class="nav-link">Accueil</a>
+          <a href="#" class="nav-link">Catégories</a>
+        </div>
+      </header>
+      <section class="showcase">
+        <div class="showcase-content">
+          <h1 class="bestmovie-title"></h1>
+          <div>
+            <div class="rating">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="bestmovie-year"></div>
+          </div>
+          <p class="bestmovie-resume"></p>
+          <div>
+            <a href="#" class="play-btn"
+              ><span class="play-icon">▶ </span>Play</a
+            >
+            <a href="#" class="more-btn"
+              ><span class="more-icon">ℹ </span>Plus d'informations</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="Javascript/main.js"></script>
+    <script type="module" src="Javascript/fetchData.js"></script>
+    <script type="module" src="Javascript/utils/utils.js"></script>
+  </body>
+</html>
