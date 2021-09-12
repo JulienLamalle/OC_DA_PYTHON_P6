@@ -1,4 +1,5 @@
 import { getData } from "./fetchData.js";
+import { displayModal, searchForItems } from "./modal.js";
 
 export const addContentToCarousel = async (
   firstContentPageUrl,
@@ -16,8 +17,8 @@ export const addContentToCarousel = async (
   allTopRatedMovies.map((movie, index) => {
     if (index < 4) {
       firstSelectedSection.innerHTML += `
-      <div class="item">
-        <img src=${movie.image_url} alt="Movie picture" />
+      <div class="item" data-id=${movie.id}>
+        <img src=${movie.image_url} alt="Movie picture for ${movie.title}" />
       </div>
     `;
     }
@@ -28,10 +29,12 @@ export const addContentToCarousel = async (
   secondPart.map((movie, index) => {
     if (index < 4) {
       secondSelectedSection.innerHTML += `
-      <div class=${`item ${index}`}>
-        <img src=${movie.image_url} alt="Movie picture" />
+      <div class="item" data-id=${movie.id}>
+        <img src=${movie.image_url} alt="Movie picture for ${movie.title}" />
       </div>
     `;
     }
   });
+  const { modal, items, span } = searchForItems(); 
+  displayModal(modal, items, span);
 };
