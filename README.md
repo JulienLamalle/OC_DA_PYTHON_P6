@@ -28,4 +28,8 @@ To do this, follow the instructions shared in the readme of the above-mentioned 
 
 After that, you can access the front-end application from the `index.html` file located in the `src` folder
 
+You can see W3C validator screenshoot here : 
 
+<p align="center">
+  <img src="./src/images/W3C_Screenshot.png" width="950">
+</p>
