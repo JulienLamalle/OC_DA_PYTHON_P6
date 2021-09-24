@@ -322,7 +322,7 @@ img {
   width: 100%;
 }
 
-.best-rated h1 {
+.best-rated h2 {
   text-align: center;
   text-transform: uppercase;
 }
@@ -330,7 +330,7 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
+h1, h2 {
   font-family: Arial;
   color: red;
   text-align: center;
@@ -348,7 +348,7 @@ h1 {
   overflow: hidden;
   scroll-behavior: smooth;
 }
-.wrapper section {
+.wrapper div {
   width: 100%;
   height: 100%;
   position: relative;
@@ -356,16 +356,16 @@ h1 {
   grid-template-columns: repeat(4, auto);
   margin: 40px 0;
 }
-.wrapper section .item {
+.wrapper div .item {
   padding: 0 2px;
   transition: 250ms all;
   max-width: 300px;
 }
-.wrapper section .item:hover {
+.wrapper div .item:hover {
   cursor: pointer;
   
 }
-.wrapper section a {
+.wrapper div a {
   position: absolute;
   color: #fff;
   text-decoration: none;
@@ -376,7 +376,7 @@ h1 {
   text-align: center;
   z-index: 1;
 }
-.wrapper section a:nth-of-type(1) {
+.wrapper div a:nth-of-type(1) {
   top: 0;
   bottom: 0;
   left: 0;
@@ -386,10 +386,10 @@ h1 {
     rgba(0, 0, 0, 1) 100%
   );
 }
-.wrapper section a:nth-of-type(2) {
+.wrapper div a:nth-of-type(2) {
   top: 0;
   bottom: 0;
-  right: 0;
+  right: 115px;
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0) 0%,
